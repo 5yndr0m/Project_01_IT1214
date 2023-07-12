@@ -8,7 +8,6 @@ class LibraryMember {
     }
 
     public void displayMemberDetails() {
-        System.out.println("Member ID: " + memberID);
-        System.out.println("Name: " + name);
+        System.out.println("| Member ID : " + memberID + " | Name : " + name);
     }
 }

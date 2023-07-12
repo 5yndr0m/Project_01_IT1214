@@ -2,7 +2,7 @@ abstract class LibraryItem{
 
     private String title;
     private String itemID;
-    private boolean checkedOut;//to check the book's availability
+    private boolean checkedOut;
 
     public LibraryItem( String title, String itemID ) {
         this.title = title;
@@ -29,9 +29,7 @@ abstract class LibraryItem{
     }
 
     public void displayItemDetails() {
-        System.out.println( "Title : " + title );
-        System.out.println( "Item ID : " + itemID );
-        System.out.println( "Status : " + (checkedOut ? "Checked Out" : "Checked In" ));
+        System.out.println( "| Title : " + title + " | Item ID : " + itemID + " | Status : " + (checkedOut ? "Checked Out" : "Checked In" ));
     }
 
 }
